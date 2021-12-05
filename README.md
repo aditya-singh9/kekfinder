@@ -2,6 +2,8 @@
 
 A simple emoji finding tool made with ReactJS.
 
+Live link - https://www.kekfinder.ml/
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
