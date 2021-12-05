@@ -1,0 +1,28 @@
+.scroll-to-top-wrapper {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.scroll-top-button {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--card-background-color);
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  animation: fadeIn 0.5s;
+  transition: 0.4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
