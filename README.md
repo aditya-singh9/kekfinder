@@ -1,42 +1,70 @@
-# kekfinder
+<h1 align="center">KekFinder</h1>
 
-A simple emoji finding tool made with ReactJS.
+> A simple emoji finding tool made using ReactJS framework.
+
+<p align="center"><strong> Live demo <a href="https://www.kekfinder.ml/">here</a>! </strong></p>
+
+## Table of Contents
+
+- [Features](#features)
+- [Setup](#project-setup)
+- [Author](#author)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Usage
+- Built with ReactJS ✨
+- All emojis available ✨
+- Dark and Light theme ✨
+- One page layout ✨
+- Dynamic ✨
+- Responsive ✨
+
+## Project setup
 
 To use this tool in your own projects, start by cloning this repository.
 
 ```sh
-https://github.com/aditya-singh9/kekfinder.git
+git clone https://github.com/aditya-singh9/kekfinder.git
 ```
 
-Then once the folder is inside your code editor, install all the necessary packages.
+### Install necessary packages
 
-```sh
+```
 npm install
 ```
 
-Once you are ready and have made changes, run:
+### Compilation and hot-reload for development
 
-```sh
+```
 npm start
 ```
 
-This runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Compilation and minification for production
 
-Once you have finished developing the app and are ready to build, run:
-
-```sh
-npm build
+```
+npm run build
 ```
 
-This builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Author
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+👤 **Aditya Singh**
+
+- Github: [@aditya-singh9](https://github.com/aditya-singh9)
+- LinkedIn: [@Aditya Singh](https://www.linkedin.com/in/aditya-singh9/)
+- Portfolio: [adityasingh.xyz](https://adityasingh.xyz)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/aditya-singh9/kekfinder/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+This project is under [GPL-3.0 License](https://github.com/aditya-singh9/kekfinder/blob/main/LICENSE).
