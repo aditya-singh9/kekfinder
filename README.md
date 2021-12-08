@@ -12,8 +12,6 @@
 - [Contributing](#-contributing)
 - [License](#-license)
 
-Live link - https://www.kekfinder.ml/
-
 ---
 
 ## Features
