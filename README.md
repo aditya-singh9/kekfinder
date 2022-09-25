@@ -67,4 +67,4 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-This project is under [GPL-3.0 License](https://github.com/aditya-singh9/kekfinder/blob/main/LICENSE).
+This project is under [MIT License](https://github.com/aditya-singh9/kekfinder/blob/main/LICENSE).
