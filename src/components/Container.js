@@ -63,6 +63,9 @@ function Container() {
         />
       )}
       <ScrollToTopButton />
+      <div className="search-bar-focus-popup">
+        <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
+      </div>
     </div>
   );
 }
