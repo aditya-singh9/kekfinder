@@ -9,12 +9,15 @@
   outline: none;
   box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
     5px 5px 15px var(--card-shadow-color-bottom-right);
-  border: none;
+  border: 1px solid var(--text-color-first);
   font-weight: 500;
   border-radius: 6px;
   transition: 0.4s;
   cursor: pointer;
   box-sizing: border-box;
+  position: sticky;
+  top: 30px;
+  z-index: 1;
 }
 
 .search::placeholder {
