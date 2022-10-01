@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+    align-items: center;
+    margin-top:10px;
+}
+.itemsSelected{
+    background: var(--card-background-color);
+  width: 100%;
+  height:24px;
+  font-size:large;
+  max-width: 500px;
+  margin: auto;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: none;
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right);
+  border: 1px solid var(--text-color-first);
+  font-weight: 500;
+  border-radius: 6px;
+  transition: 0.4s;
+  padding: 2px;
+  text-align: center;
+}
+
+.copyBtn{
+    padding: 7px 8px;
+    margin: auto;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+    border: 1px solid #198754;
+    border-radius: 6px;
+  transition: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #198754;
+  margin-top: 5px;
+  font-size: x-large;
+}
+.copyBtn:hover,.copyBtn:active{
+    background: #1a9a5e;
+    box-shadow: 0 0 1px 1px #1a9a5e;
+}
+.deleteBtn{
+    padding: 10px 12px;
+    margin: auto;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+  transition: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #dc3545;
+  margin-top: 5px;
+}
+.deleteBtn:hover,.deleteBtn:active{
+    background: #f93f52;
+    box-shadow: 0 0 1px 1px #f93f52;
+}

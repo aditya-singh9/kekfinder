@@ -7,24 +7,19 @@ import "./Toggle.css";
 
 function Toggle({ parentCallback }) {
   const [togClass, setTogClass] = useState("light");
-  const theme = localStorage.getItem("theme");
 
   const handleOnClick = () => {
-    if (localStorage.getItem("theme") === "dark") {
-      setTheme("light");
-      setTogClass("light");
-      parentCallback("light");
-    } else {
-      setTheme("dark");
-      setTogClass("dark");
-      parentCallback("dark");
-    }
+    const storedTheme = localStorage.getItem("theme") === "dark" ? "light" : "dark";
+
+    setTheme(storedTheme);
+    setTogClass(storedTheme);
+    parentCallback(storedTheme);
   };
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     setTogClass(storedTheme);
-  }, [theme]);
+  }, []);
 
   return (
     <div className="container-toggle">
