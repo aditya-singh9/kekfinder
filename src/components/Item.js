@@ -6,9 +6,24 @@ import "./Item.css";
 function Item({ id, symbol, keywords }) {
   const [fadeIn, setFadeIn] = useState(false);
   const {selectedItems,updateSelectedItems} = useContext(itemsContext)
+  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
+
+  const updateRecentEmojis = () => {
+    const RECENTSLIMIT = 4;
+
+    let index = -1;
+    recentEmojis.forEach((emoji, i) => {
+      if(emoji.symbol === symbol) index = i;
+    });
+    if(index >= 0 || recentEmojis.length === RECENTSLIMIT) {
+      recentEmojis.splice(index, 1);
+    }
+  }
 
   const handleClick = (e) => {
-    updateSelectedItems(selectedItems+symbol)
+    updateSelectedItems(selectedItems+symbol);
+    updateRecentEmojis();
+    localStorage.setItem("recentEmojis", JSON.stringify([{symbol, keywords}].concat(...recentEmojis)));
     setFadeIn(true);
     setTimeout(()=>{
       setFadeIn(false);
