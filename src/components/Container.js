@@ -11,7 +11,7 @@ function Container() {
   const emojiData = data;
   const [newEmojiData, setNewEmojiData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis"));
+  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
 
   const onChange = useCallback(
     (val) => {
@@ -41,7 +41,7 @@ function Container() {
           }
         });
       } else {
-        recentEmojis = JSON.parse(localStorage.getItem("recentEmojis"));
+        recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
       }
 
       setNewEmojiData(newEmojis);
