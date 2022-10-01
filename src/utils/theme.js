@@ -1,26 +1,17 @@
-function setTheme(themeName) {
+export function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
   document.documentElement.className = themeName;
 }
 
-function keepTheme() {
+export function keepTheme() {
   const theme = localStorage.getItem("theme");
   if (theme) {
-    setTheme(theme);
-  } else {
-    const doesUserPreferDarkMode = window.matchMedia([
-      "(prefers-color-scheme: dark)",
-    ]).matches;
-
-    if (doesUserPreferDarkMode) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    return setTheme(theme);
   }
-}
 
-module.exports = {
-  setTheme,
-  keepTheme,
-};
+  const doesUserPreferDarkMode = window.matchMedia([
+    "(prefers-color-scheme: dark)",
+  ]).matches;
+
+  doesUserPreferDarkMode ? setTheme("dark") : setTheme("light");
+}

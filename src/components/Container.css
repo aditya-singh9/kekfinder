@@ -12,3 +12,25 @@
   opacity: 0.7;
   text-align: center;
 }
+
+.search-bar-focus-popup {
+  position: fixed;
+  bottom: -5rem;
+  left: 2rem;
+  background: var(--card-background-color);
+  font-size: 14px;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: bottom .5s;
+}
+
+.search-bar-focus-popup.visible {
+  bottom: 2rem;
+}
+
+.search-bar-focus-hotkey {
+  background: var(--background-color);
+  padding: 4px 8px;
+  font-weight: bold;
+  border-radius: 3px;
+}

@@ -1,19 +1,16 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import Header from "./Header.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
 import ScrollToTopButton from "./ScrollToTopButton";
+import ItemsSelected from "./ItemsSelected.js";
 import "./Container.css";
 
 function Container() {
-  const [emojiData, setEmojiData] = useState([]);
+  const emojiData = data;
   const [newEmojiData, setNewEmojiData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-
-  useEffect(() => {
-    setEmojiData(data);
-  }, []);
 
   const onChange = useCallback(
     (val) => {
@@ -27,18 +24,15 @@ function Container() {
 
       let queryLengthSum = 0;
 
-      console.log("\n\n\n NEW LINE \n\n\n");
-
       if (val.toLowerCase() !== "") {
+        // Loop through all emojis and push matching emojis into newEmojis array
         emojiData.forEach((item) => {
-          let removeDuplicates = [...new Set(item.keywords.trim().split(" "))];
+          const emojiKeywords = item.keywords.trim();
           queryLengthSum = 0;
           queryKeywords.forEach((query) => {
-            removeDuplicates.forEach((keyword) => {
-              if (keyword.indexOf(query) >= 0) {
-                queryLengthSum++;
-              }
-            });
+            if (emojiKeywords.indexOf(query) >= 0) {
+              queryLengthSum++;
+            }
           });
 
           if (queryLength <= queryLengthSum) {
@@ -55,14 +49,18 @@ function Container() {
     <div className="container">
       <Header />
       <Search onChange={onChange} />
+      <ItemsSelected />
       {!searchQuery ? (
         <p className="first-render">Type Keywords to Search</p>
-      ) : (
-        <Results
+        ) : (
+          <Results
           emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
-        />
-      )}
+          />
+          )}
       <ScrollToTopButton />
+      <div className="search-bar-focus-popup">
+        <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
+      </div>
     </div>
   );
 }

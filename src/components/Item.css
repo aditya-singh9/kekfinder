@@ -18,10 +18,15 @@
 }
 
 .item:hover {
-  /* box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
-    5px 5px 15px var(--card-shadow-color-bottom-right),
-    0 0 0 5px var(--border-color); */
     box-shadow: 0px 0px 5px 2px #ffc83d;
+  transform: scale(1.1);
+}
+
+.item-selected{
+  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
+    5px 5px 15px var(--card-shadow-color-bottom-right),
+    0 0 0 5px var(--border-color);
+>>>>main>>> 
 }
 
 .item-copy {
@@ -49,8 +54,11 @@
 .item-emoji {
   font-size: 2.4em;
   cursor: pointer;
+  transition: all 0.4s ease-in;
 }
-
+.item:hover .item-emoji {
+  transform: scale(1.4);
+}
 .item-name {
   font-size: 0.9em;
   line-height: 1.4em;
