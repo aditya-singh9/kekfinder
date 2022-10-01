@@ -44,7 +44,6 @@ function Item({ id, symbol, keywords }) {
     // sort in decreasing weight
     recentEmojis.sort((a, b) => b.weight - a.weight);
     localStorage.setItem("recentEmojis", JSON.stringify(recentEmojis));
-    console.log(newRecentEntry, recentEmojis);
     
     setFadeIn(true);
     setTimeout(()=>{
