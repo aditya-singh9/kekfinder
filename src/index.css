@@ -50,10 +50,10 @@ input {
 
 /*custom scrollbar*/
 ::-webkit-scrollbar {
-  width: 6px;
-  background: #121212;
+  width: 7px;
+  background: #fec023f3;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cecece;
+  background: #ffffff;
   border-radius: 100px;
 }
