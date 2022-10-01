@@ -4,6 +4,7 @@ import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
 import ScrollToTopButton from "./ScrollToTopButton";
+import ItemsSelected from "./ItemsSelected.js";
 import "./Container.css";
 
 function Container() {
@@ -48,13 +49,14 @@ function Container() {
     <div className="container">
       <Header />
       <Search onChange={onChange} />
+      <ItemsSelected />
       {!searchQuery ? (
         <p className="first-render">Type Keywords to Search</p>
-      ) : (
-        <Results
+        ) : (
+          <Results
           emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
-        />
-      )}
+          />
+          )}
       <ScrollToTopButton />
       <div className="search-bar-focus-popup">
         <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
