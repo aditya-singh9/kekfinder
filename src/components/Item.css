@@ -64,11 +64,11 @@
 
 @media only screen and (max-width: 600px) {
   .item {
-    height: 120px;
-    width: 130px;
+    height: 50vh;
+    width: 90vw;
   }
   .item-emoji {
-    font-size: 1.6em;
+    font-size: 8em;
   }
   .item-name {
     font-size: 0.8em;
