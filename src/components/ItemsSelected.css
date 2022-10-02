@@ -12,22 +12,14 @@
 }
 
 .itemsSelected {
-  /* background: var(--card-background-color); */
   width: 100%;
   min-height: 24px;
-  
   max-width: calc(100% - 6px);
   margin: auto;
-  
   outline: none;
-  /* box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
-    5px 5px 15px var(--card-shadow-color-bottom-right); */
-  /* border: 1px solid var(--text-color-first); */
-  
   border-radius: 6px;
   transition: 0.4s;
   padding: 2px;
-  /* text-align: center; */
 }
 
 .itemsSelectedSymbols {
