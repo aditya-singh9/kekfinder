@@ -11,6 +11,7 @@ function Container() {
   const emojiData = data;
   const [newEmojiData, setNewEmojiData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
 
   const onChange = useCallback(
     (val) => {
@@ -39,6 +40,8 @@ function Container() {
             newEmojis.push(item);
           }
         });
+      } else {
+        recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
       }
 
       setNewEmojiData(newEmojis);
@@ -50,13 +53,9 @@ function Container() {
       <Header />
       <Search onChange={onChange} />
       <ItemsSelected />
-      {!searchQuery ? (
-        <p className="first-render">Type Keywords to Search</p>
-        ) : (
-          <Results
-          emojiFiltered={searchQuery === "" ? emojiData : newEmojiData}
-          />
-          )}
+      <Results
+        emojiFiltered={searchQuery === "" ? recentEmojis : newEmojiData}
+      />
       <ScrollToTopButton />
       <div className="search-bar-focus-popup">
         <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
