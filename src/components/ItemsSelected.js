@@ -27,7 +27,13 @@ function ItemsSelected() {
   }
   return (
     <div className='sub-container'>
-      <div className='itemsSelected'>{selectedItems}</div>
+      {
+        selectedItems.length !== 0 &&
+          <div className='itemsSelected'>
+            <span className='textest'>Selected emojis: </span>
+            <span className='itemsSelectedSymbols'>{selectedItems}</span>
+          </div>
+      }
       <div> <button
         style={{ marginRight: '5px' }}
         type='button'
