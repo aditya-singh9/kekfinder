@@ -1,21 +1,22 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    position: sticky;
-    top: 100px;
-    z-index: 1;
-    align-items: center;
-    margin-top:10px;
-}
-.itemsSelected{
-    background: var(--card-background-color);
+.sub-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height:24px;
-  font-size:large;
   max-width: 500px;
+  margin: auto;
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.itemsSelected {
+  background: var(--card-background-color);
+  width: 100%;
+  min-height: 24px;
+  font-size: large;
+  max-width: calc(100% - 6px);
   margin: auto;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -30,14 +31,14 @@
   text-align: center;
 }
 
-.copyBtn{
-    padding: 7px 8px;
-    margin: auto;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+.copyBtn {
+  padding: 7px 8px;
+  margin: auto;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    outline: none;
-    border: 1px solid #198754;
-    border-radius: 6px;
+  outline: none;
+  border: 1px solid #198754;
+  border-radius: 6px;
   transition: 0.4s;
   cursor: pointer;
   box-sizing: border-box;
@@ -45,25 +46,30 @@
   margin-top: 5px;
   font-size: x-large;
 }
-.copyBtn:hover,.copyBtn:active{
-    background: #1a9a5e;
-    box-shadow: 0 0 1px 1px #1a9a5e;
+
+.copyBtn:hover,
+.copyBtn:active {
+  background: #1a9a5e;
+  box-shadow: 0 0 1px 1px #1a9a5e;
 }
-.deleteBtn{
-    padding: 10px 12px;
-    margin: auto;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+
+.deleteBtn {
+  padding: 10px 12px;
+  margin: auto;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    outline: none;
-    border: 1px solid #dc3545;
-    border-radius: 6px;
+  outline: none;
+  border: 1px solid #dc3545;
+  border-radius: 6px;
   transition: 0.4s;
   cursor: pointer;
   box-sizing: border-box;
   background: #dc3545;
   margin-top: 5px;
 }
-.deleteBtn:hover,.deleteBtn:active{
-    background: #f93f52;
-    box-shadow: 0 0 1px 1px #f93f52;
+
+.deleteBtn:hover,
+.deleteBtn:active {
+  background: #f93f52;
+  box-shadow: 0 0 1px 1px #f93f52;
 }
