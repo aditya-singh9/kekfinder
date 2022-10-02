@@ -19,6 +19,12 @@
   position: sticky;
   top: 30px;
   z-index: 1;
+  -webkit-appearance: none;
+}
+
+.search::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+  cursor: pointer;
 }
 
 .search::placeholder {
