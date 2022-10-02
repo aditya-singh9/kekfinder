@@ -22,7 +22,7 @@ function Search(props) {
     <input
       className="search"
       type="text"
-      placeholder="Search for a keyword..."
+      placeholder="Enter keywords to search for an emojis..."
       onChange={onChange}
     />
   );
