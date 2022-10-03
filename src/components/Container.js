@@ -11,7 +11,7 @@ function Container() {
   const emojiData = data;
   const [newEmojiData, setNewEmojiData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
+  let recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || emojiData;
 
   const onChange = useCallback(
     (val) => {
@@ -41,7 +41,8 @@ function Container() {
           }
         });
       } else {
-        recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || [];
+        // eslint-disable-next-line
+        recentEmojis = JSON.parse(localStorage.getItem("recentEmojis")) || emojiData;
       }
 
       setNewEmojiData(newEmojis);
