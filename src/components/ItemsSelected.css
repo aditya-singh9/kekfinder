@@ -9,26 +9,25 @@
   z-index: 1;
   align-items: center;
   margin-top: 10px;
+  font-size: small;
 }
 
 .itemsSelected {
-  background: var(--card-background-color);
   width: 100%;
   min-height: 24px;
-  font-size: large;
   max-width: calc(100% - 6px);
   margin: auto;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
-  box-shadow: -5px -5px 15px var(--card-shadow-color-top-left),
-    5px 5px 15px var(--card-shadow-color-bottom-right);
-  border: 1px solid var(--text-color-first);
-  font-weight: 500;
   border-radius: 6px;
   transition: 0.4s;
   padding: 2px;
-  text-align: center;
+}
+
+.itemsSelectedSymbols {
+  font-size: large;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
 }
 
 .copyBtn {
@@ -37,14 +36,14 @@
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
-  border: 1px solid #198754;
+  border: 1px solid #77DD77;
   border-radius: 6px;
   transition: 0.4s;
   cursor: pointer;
   box-sizing: border-box;
-  background: #198754;
+  background: #77DD77;
   margin-top: 5px;
-  font-size: x-large;
+  /* font-size: x-large; */
 }
 
 .copyBtn:hover,
@@ -54,17 +53,18 @@
 }
 
 .deleteBtn {
-  padding: 10px 12px;
+  /* padding: 10px 12px; */
+  padding: 7px 8px;
   margin: auto;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   outline: none;
-  border: 1px solid #dc3545;
+  border: 1px solid #FF6D6A;
   border-radius: 6px;
   transition: 0.4s;
   cursor: pointer;
   box-sizing: border-box;
-  background: #dc3545;
+  background: #FF6D6A;
   margin-top: 5px;
 }
 
@@ -72,4 +72,18 @@
 .deleteBtn:active {
   background: #f93f52;
   box-shadow: 0 0 1px 1px #f93f52;
+}
+
+.itemsSelectedBtns, .itemsSelectedBtns > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.itemsSelectedBtns > button > * {
+  opacity: 0.7;
+}
+
+.itemsSelectedBtns > button > img {
+  padding-right: 5px;
 }
