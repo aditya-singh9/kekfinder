@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Header from "./Header.js";
+import  Footer  from "./Footer.js";
 import Search from "./Search.js";
 import Results from "./Results.js";
 import data from "../json/data.json";
@@ -58,6 +59,7 @@ function Container() {
         emojiFiltered={searchQuery === "" ? recentEmojis : newEmojiData}
       />
       <ScrollToTopButton />
+      <Footer/>
       <div className="search-bar-focus-popup">
         <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
       </div>
