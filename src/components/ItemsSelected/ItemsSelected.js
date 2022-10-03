@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import itemsContext from '../itemsContext'
+import itemsContext from '../../itemsContext'
 import './ItemsSelected.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
