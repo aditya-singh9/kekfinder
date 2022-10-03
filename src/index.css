@@ -10,6 +10,13 @@ body {
   transition: 0.3s;
   color: var(--text-color-first);
 }
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+}
 
 #root {
   max-width: 1000px;
