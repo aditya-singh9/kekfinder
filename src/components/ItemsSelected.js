@@ -34,14 +34,20 @@ function ItemsSelected() {
             <span className='itemsSelectedSymbols'>{selectedItems}</span>
           </div>
       }
-      <div> <button
+      <div className='itemsSelectedBtns'> <button
         style={{ marginRight: '5px' }}
         type='button'
         className='copyBtn'
         onClick={copyBtnFunc}
         title="Copy Emoji to Clipboard"
       >
-        📋
+        <img
+          src='https://cdn-icons-png.flaticon.com/512/860/860787.png'
+          width='18px'
+          height='18px'
+          alt='Delete'
+        />
+        <span>Copy</span>
       </button>
         <button
           type="button"
@@ -50,11 +56,12 @@ function ItemsSelected() {
           title="Delete Emoji from End"
         >
           <img
-            src='https://res.cloudinary.com/nishantwrp/image/upload/v1587486661/CSOC/delete.svg'
+            src='https://cdn-icons-png.flaticon.com/512/4209/4209885.png'
             width='18px'
-            height='22px'
+            height='18px'
             alt='Delete'
           />
+          <span>Delete</span>
         </button></div>
 
       <ToastContainer
