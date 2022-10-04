@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  margin: auto;
+  margin: 20px auto;
   position: sticky;
   top: 100px;
   z-index: 1;
@@ -43,7 +43,6 @@
   box-sizing: border-box;
   background: #77DD77;
   margin-top: 5px;
-  /* font-size: x-large; */
 }
 
 .copyBtn:hover,
@@ -53,7 +52,6 @@
 }
 
 .deleteBtn {
-  /* padding: 10px 12px; */
   padding: 7px 8px;
   margin: auto;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

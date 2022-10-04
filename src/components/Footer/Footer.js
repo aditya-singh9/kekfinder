@@ -13,7 +13,7 @@ export const Footer = () => {
       >
         <CDBBox display="flex" alignItems="center">
           <a href="/" className="d-flex align-items-center p-0 text-muted">
-          <span className="ml-4 h5 mb-0 font-weight-bold">KekFinder</span>
+            <span className="ml-4 h5 mb-0 font-weight-bold">KekFinder</span>
           </a>
         </CDBBox>
         <CDBBox>

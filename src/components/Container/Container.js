@@ -46,19 +46,30 @@ function Container() {
     [setNewEmojiData, setSearchQuery, emojiData]
   );
   return (
-    <div className="container">
-      <Header />
-      <Search onChange={onChange} />
-      <ItemsSelected />
-      <Results
-        emojiFiltered={searchQuery === "" ? recentEmojis : newEmojiData}
-      />
-      <ScrollToTopButton />
-      <Footer/>
-      <div className="search-bar-focus-popup">
-        <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
+    <>
+      <div className="container">
+        <div className="sides">
+          <div className="left">
+            <Header />
+            <div className="searchBox">
+              <Search onChange={onChange} />
+              <ItemsSelected />
+            </div>
+          </div>
+          <div className="right">
+            <Results
+              emojiFiltered={searchQuery === "" ? recentEmojis : newEmojiData}
+            />
+            <ScrollToTopButton />
+            <div className="search-bar-focus-popup">
+              <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
+            </div>
+            <Footer />
+          </div>
+        </div>
       </div>
-    </div>
+
+    </>
   );
 }
 

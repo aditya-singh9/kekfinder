@@ -29,7 +29,7 @@ function Search(props) {
 }
 
 Search.defaultValue = {
-  onChange: () => {},
+  onChange: () => { },
 };
 
 Search.propTypes = {
