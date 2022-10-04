@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import Item from "./Item.js";
+import { Item } from "..";
 import Clipboard from "clipboard";
 import "./Results.css";
 

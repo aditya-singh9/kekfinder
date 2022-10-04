@@ -1,11 +1,6 @@
 import React, { useState, useCallback } from "react";
-import Header from "./Header.js";
-import  Footer  from "./Footer.js";
-import Search from "./Search.js";
-import Results from "./Results.js";
-import data from "../json/data.json";
-import ScrollToTopButton from "./ScrollToTopButton";
-import ItemsSelected from "./ItemsSelected.js";
+import { Header, Footer, Search, Results, ScrollToTopButton, ItemsSelected } from "..";
+import data from "../../json/data.json";
 import "./Container.css";
 
 function Container() {

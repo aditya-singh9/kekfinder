@@ -1,5 +1,5 @@
 import React, { useState , useContext} from "react";
-import itemsContext from "../itemsContext";
+import itemsContext from "../../itemsContext";
 import PropTypes from "prop-types";
 import "./Item.css";
 

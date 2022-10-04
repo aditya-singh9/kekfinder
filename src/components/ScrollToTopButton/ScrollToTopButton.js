@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ScrollToTopButton.css";
-import { ReactComponent as UpIcon } from "../assets/up.svg";
+import { ReactComponent as UpIcon } from "../../assets/up.svg";
 
 const ScrollToTopButton = () => {
   const [showScrollToTop, setScrollToTop] = useState(false);

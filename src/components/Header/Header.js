@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import GitHubButton from "react-github-btn";
 import "./Header.css";
-import Toggle from "./Toggle";
-import { keepTheme } from "../utils/theme";
+import { Toggle } from "..";
+import { keepTheme } from "../../utils/theme";
 
 function Header() {
   const theme = localStorage.getItem("theme");
