@@ -12,7 +12,7 @@ function ItemsSelected() {
       navigator.clipboard.writeText(selectedItems)
       updateSelectedItems("")
       toast.success('Copied to Clipboard 📋!', {
-        position: "bottom-right",
+        position: "bottom-left",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -29,10 +29,10 @@ function ItemsSelected() {
     <div className='sub-container'>
       {
         selectedItems.length !== 0 &&
-          <div className='itemsSelected'>
-            <span className='textest'>Selected emojis: </span>
-            <span className='itemsSelectedSymbols'>{selectedItems}</span>
-          </div>
+        <div className='itemsSelected'>
+          <span className='textest'>Selected emojis: </span>
+          <span className='itemsSelectedSymbols'>{selectedItems}</span>
+        </div>
       }
       <div className='itemsSelectedBtns'> <button
         style={{ marginRight: '5px' }}

@@ -24,7 +24,7 @@ function Header() {
   return (
     <div className="header">
       <h1>KekFinder </h1>
-      <p>Find emojis with ease.</p>
+      <p className="hDesc">Find emojis with ease.</p>
       <p className="github">
         <GitHubButton
           href="https://github.com/aditya-singh9/kekfinder"

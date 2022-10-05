@@ -1,11 +1,3 @@
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: auto;
-}
-
 .first-render {
   margin: 4em 0;
   font-size: 0.8em;
@@ -33,4 +25,125 @@
   padding: 4px 8px;
   font-weight: bold;
   border-radius: 3px;
+}
+
+/* Desktop view  */
+
+@media screen and (min-width:1400px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .sides{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .right{
+    position: absolute;
+    right: 2%;
+  }
+  
+  .left{
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 35%;
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+    width: 600px;
+  }
+
+}
+
+/* tablet and small laptop view */
+@media only screen and (max-width: 1399px)  {
+  .sides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left{
+    position: block;
+    align-items: center;
+    justify-content: center;
+    width: 63%;
+  }
+
+  .searchBox{
+    width: 100%;
+  }
+  .footer{
+    width: 100%;
+  }
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 600px)  {
+  
+  .sides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left{
+    position: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .footer{
+    width: 321px;
+  }
+}
+
+/* normal size phones , what we use generally */
+
+@media only screen and (max-width: 321px)  {
+  .sides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -55px;
+  }
+
+  .left{
+    position: block;
+    align-items: center;
+    justify-content: center;
+    width: 19rem;
+  }
+  
+  .searchBox{
+    width: 100%;
+  }
+   .footer{
+    width: 321px;
+  }
 }

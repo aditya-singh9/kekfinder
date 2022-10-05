@@ -4,10 +4,29 @@
   line-height: 1.4em;
 }
 
+h1{
+  font-size: 3.5rem;
+  font-weight: 550;
+}
+
+.hDesc{
+  font-size: 15px;
+}
+
 .theme-info {
   font-size: 0.6em;
 }
 
 .github {
   height: 30px;
+}
+
+@media only screen and (max-width: 600px)  {
+  h1{
+    font-size: 2.35rem;
+  }
+  .header{
+    align-items: center;
+    justify-content: center;
+  }
 }
