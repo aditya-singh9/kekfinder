@@ -41,16 +41,39 @@
   cursor: text;
 }
 
-@media only screen and (max-width: 600px) {
+/* tablet and small laptop view */
+@media only screen and (max-width: 1399px)  {
   .search{
-    position: sticky;
+    
     top: 0px;
-    padding: 10px 10px;
+    padding: 12px 14px;
+  }
+  
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .search{
+    padding: 12px 14px;
+    width: 100%;
   }
 
   .search::placeholder{
     font-size: 14px;
     font-weight: bold;
+
   }
 
+}
+
+@media only screen and (max-width: 321px)  {
+  .search{
+    padding: 10px 10px;
+  }
+
+  .search::placeholder{
+    font-size: 13px;
+    font-weight: bold;
+  }
 }
