@@ -8,9 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 function ItemsSelected() {
   const { selectedItems, updateSelectedItems } = useContext(itemsContext)
   const copyBtnFunc = () => {
-    if (selectedItems !== "") {
-      navigator.clipboard.writeText(selectedItems)
-      updateSelectedItems("")
+    if (selectedItems.length !== 0) {
+      navigator.clipboard.writeText(selectedItems.join(""));
+      updateSelectedItems([]);
       toast.success('Copied to Clipboard 📋!', {
         position: "bottom-left",
         autoClose: 2000,
@@ -23,7 +23,7 @@ function ItemsSelected() {
     }
   }
   const deleteBtnFunc = () => {
-    updateSelectedItems(selectedItems.substr(0, (selectedItems.length) - 2))
+    updateSelectedItems(selectedItems.slice(0, -1));
   }
   return (
     <div className='sub-container'>
@@ -31,7 +31,7 @@ function ItemsSelected() {
         selectedItems.length !== 0 &&
         <div className='itemsSelected'>
           <span className='textest'>Selected emojis: </span>
-          <span className='itemsSelectedSymbols'>{selectedItems}</span>
+          <span className='itemsSelectedSymbols'>{selectedItems.join("")}</span>
         </div>
       }
       <div className='itemsSelectedBtns'> <button
