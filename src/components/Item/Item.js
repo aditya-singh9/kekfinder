@@ -32,7 +32,7 @@ function Item({ id, symbol, keywords }) {
   }
 
   const handleClick = (e) => {
-    updateSelectedItems(selectedItems+symbol);
+    updateSelectedItems(selectedItems.concat(symbol));
     updateRecentEmojis();
     const newRecentEntry = {
       symbol,
