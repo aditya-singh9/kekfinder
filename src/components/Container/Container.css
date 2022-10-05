@@ -55,6 +55,13 @@
     width: 35%;
   }
 
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 8%;
+    width: 600px;
+  }
+
   /* .searchBox{
     position: sticky;
     top: 30px;
