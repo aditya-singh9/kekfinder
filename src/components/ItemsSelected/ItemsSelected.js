@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import itemsContext from '../../itemsContext'
 import './ItemsSelected.css'
-import { ToastContainer, toast } from 'react-toastify';
+import toast, { Toaster } from "react-hot-toast";
 import 'react-toastify/dist/ReactToastify.css';
 
 function ItemsSelected() {
@@ -11,15 +11,7 @@ function ItemsSelected() {
     if (selectedItems.length !== 0) {
       navigator.clipboard.writeText(selectedItems.join(""));
       updateSelectedItems([]);
-      toast.success('Copied to Clipboard 📋!', {
-        position: "bottom-left",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+      toast.success("Copied!")
     }
   }
   const deleteBtnFunc = () => {
@@ -63,18 +55,6 @@ function ItemsSelected() {
           />
           <span>Delete</span>
         </button></div>
-
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </div>
   )
 }
