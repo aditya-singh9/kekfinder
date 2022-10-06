@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.container-layout {
+  min-height: calc(100vh - 40px);
+  justify-content: space-between !important;
+}
+
 .search-bar-focus-popup {
   position: fixed;
   bottom: -5rem;
