@@ -47,7 +47,7 @@ function Container() {
   );
   return (
     <>
-      <div className="container">
+      <div className="container container-layout">
         <div className="sides">
           <div className="left">
             <Header />
@@ -64,10 +64,10 @@ function Container() {
             <div className="search-bar-focus-popup">
               <span>Press <span className="search-bar-focus-hotkey">/</span> to jump to the search box</span>
             </div>
-            <div className="footer">
-              <Footer />
-            </div>
           </div>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </div>
 
