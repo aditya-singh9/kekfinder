@@ -9,7 +9,12 @@ function App() {
 
     document.addEventListener('keydown', focusOnSearchBar);
     document.addEventListener('keydown', showSearchBarFocusHelp);
-  });
+
+    return () => {
+      document.removeEventListener('keydown', focusOnSearchBar);
+      document.removeEventListener('keydown', showSearchBarFocusHelp);
+    }
+  }, []);
 
   return <Container />;
 }
