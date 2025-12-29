@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import itemsContext from '../../itemsContext'
 import './ItemsSelected.css'
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import 'react-toastify/dist/ReactToastify.css';
 
 function ItemsSelected() {
