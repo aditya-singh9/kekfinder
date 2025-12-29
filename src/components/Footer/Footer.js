@@ -26,9 +26,9 @@ export const Footer = () => {
           <CDBBtn flat color="primary" className="mx-3 p-2">
             <CDBIcon fab icon="twitter" />
           </CDBBtn> */}
-          <CDBBtn flat color="dark" href="https://github.com/aditya-singh9/kekfinder" className="p-2">
+          {/* <CDBBtn flat color="dark" href="https://github.com/aditya-singh9/kekfinder" className="p-2">
             <CDBIcon fab icon="github" />
-          </CDBBtn>
+          </CDBBtn> */}
         </CDBBox>
       </CDBBox>
     </CDBFooter>
